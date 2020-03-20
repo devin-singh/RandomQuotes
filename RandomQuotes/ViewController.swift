@@ -1,12 +1,6 @@
-//
-//  ViewController.swift
-//  RandomQuotes
-//
-//  Created by Devin Singh on 3/19/20.
-//  Copyright © 2020 Devin Singh. All rights reserved.
-//
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
     

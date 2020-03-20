@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,63 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomQuotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candlebg" translatesAutoresizingMaskIntoConstraints="NO" id="b40-D5-fRX">
+                                <rect key="frame" x="0.0" y="299.5" width="414" height="579"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="aja-Sg-bjw">
+                                <rect key="frame" x="62" y="201" width="290" height="322.5"/>
+                                <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="' Those who say, do not Know...'" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcG-aS-D8z">
+                                <rect key="frame" x="20.5" y="56.5" width="373" height="159"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFA-0I-d71">
+                                <rect key="frame" x="105.5" y="736.5" width="203" height="67"/>
+                                <color key="backgroundColor" red="0.16862745098039217" green="0.20784313725490194" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                <state key="normal" title="Inspire Me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b40-D5-fRX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="5HI-Jr-Apm"/>
+                            <constraint firstItem="AcG-aS-D8z" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.177455" id="5n6-PA-MI7"/>
+                            <constraint firstItem="nFA-0I-d71" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.7" id="8u3-ux-Ijh"/>
+                            <constraint firstItem="aja-Sg-bjw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.36" id="AFH-kd-j7g"/>
+                            <constraint firstItem="AcG-aS-D8z" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.3" id="BqT-Ht-Psi"/>
+                            <constraint firstItem="aja-Sg-bjw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ISU-LV-2g5"/>
+                            <constraint firstItem="b40-D5-fRX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.3" id="LTS-LN-r4J"/>
+                            <constraint firstItem="b40-D5-fRX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qvx-mO-CoT"/>
+                            <constraint firstItem="AcG-aS-D8z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="cfD-RN-WYK"/>
+                            <constraint firstItem="b40-D5-fRX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.646205" id="fmo-Jl-7yc"/>
+                            <constraint firstItem="nFA-0I-d71" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0747768" id="fz1-yI-zdp"/>
+                            <constraint firstItem="aja-Sg-bjw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="joG-qO-EuB"/>
+                            <constraint firstItem="aja-Sg-bjw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.8" id="m7f-Ny-iZH"/>
+                            <constraint firstItem="AcG-aS-D8z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="obM-2Q-bmj"/>
+                            <constraint firstItem="nFA-0I-d71" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.490338" id="pCg-zD-O7R"/>
+                            <constraint firstItem="nFA-0I-d71" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uaW-y3-wnZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="candlebg" width="1920" height="1080"/>
+    </resources>
 </document>
